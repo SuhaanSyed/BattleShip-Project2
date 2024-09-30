@@ -79,7 +79,7 @@ class AI:
         """
         while True:
             row = random.randint(0, IH.NUMBER_OF_ROWS - 1)
-            col = random.randint(0, IH.NUMBER_OF_COLUMNS - 1)
+            col = random.randint(0, IH.NUMBER_OF_COLS - 1)
             if self.opponent_board[row][col] == 0:
                 return (row, col)
 
@@ -101,7 +101,7 @@ class AI:
         Hard difficulty: Knows where all ships are and lands a hit every turn.
         """
         for row in range(IH.NUMBER_OF_ROWS):
-            for col in range(IH.NUMBER_OF_COLUMNS):
+            for col in range(IH.NUMBER_OF_COLS):
                 if self.opponent_board[row][col] == 0:
                     return (row, col)
 
@@ -110,7 +110,7 @@ class AI:
         Update the opponent's board with the result of the attack.
         """
         row, col = coord
-        col = self.convert_letter_to_col(col)
+        #col = self.convert_letter_to_col(col)
         self.opponent_board[row][col] = result
         if result == IH.CoordStateType.COORD_STATE_HIT:
             self.last_hit = coord
@@ -155,7 +155,7 @@ class AI:
             adjacent_coords.append((row + 1, col))
         if col > 0:
             adjacent_coords.append((row, col - 1))
-        if col < IH.NUMBER_OF_COLUMNS - 1:
+        if col < IH.NUMBER_OF_COLS - 1:
             adjacent_coords.append((row, col + 1))
         return adjacent_coords
     
