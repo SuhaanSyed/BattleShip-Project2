@@ -13,5 +13,5 @@
 | AI setup: Random placement validation        | 1 hour         | ?           | ?                                                                                     |
 | Refactor terminal-based UI                   | 3 hours        | ?           | ?                                                                                     |
 | UML diagram for custom feature               | 2 hours        | ?           | ?                                                                                     |
-| Bug fixing and refactoring                   | 4 hours        | ?           | ?                                                                                     |
+| Bug fixing and refactoring                   | 4 hours        | ?           | Evan - Sunday Sept 29 - 77 min                                                        |
 | Sound effects implementation (optional)      | 2 hours        | ?           | ?                                                                                     |

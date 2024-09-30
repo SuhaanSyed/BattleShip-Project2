@@ -301,7 +301,7 @@ def main():
                         function_parameters[ IH.VIEW_PARAM_STATE_MESSAGE ] = f"Your move at row={ attack[ IH.VIEW_PARAM_ROW ] }, col={ attack[ IH.VIEW_PARAM_COL ] } missed!"
 
                     if response[ IH.VIEW_PARAM_SHIP_SUNK ]:
-                        function_parameters[ IH.VIEW_PARAM_STATE_MESSAGE ] += f"\nShip of size { response[ IH.VIEW_PARAM_SIZE ] } was sunk!"
+                        function_parameters[ IH.VIEW_PARAM_STATE_MESSAGE ] = f"Ship of size { response[ IH.VIEW_PARAM_SIZE ] } was sunk!"
 
                     # If the result of the attack ended the opponent
                     # Indicate that you won the game!
